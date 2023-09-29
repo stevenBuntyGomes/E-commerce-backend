@@ -30,10 +30,11 @@ app.use("/api/v1", payment);
 
 // changed for production level integration
 app.use(express.static(path.join(__dirname, "../frontend/build")));
-
-app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "https://adorable-nasturtium-445742.netlify.app/"));
-});
+// commented for testing purposes
+// app.get("*", (req, res) => {
+//     res.sendFile(path.resolve(__dirname, "https://adorable-nasturtium-445742.netlify.app/"));
+// });
+// commented for testing purposes
 // app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 // app.get("*", (req, res) => {
